@@ -1,4 +1,4 @@
-# Web Component Cheatsheet
+# Web Components Cheatsheet
 
 ## Basic customized built-in elements
 
