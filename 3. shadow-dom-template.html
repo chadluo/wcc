@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <!-- template and slot declaration; parsed but not rendered -->
+  <template id="myButton">
+    <button>
+      <slot name="label">wat</slot>
+    </button>
+  </template>
+
+  <!-- element declaration with slot fulfilling -->
+  <custom-element><span slot="label">yay</span></custom-element>
+  <custom-element><span slot="label">uwu</span></custom-element>
+
+  <script>
+    "use strict";
+    customElements.define(
+      "custom-element", // mandatory: '-' in name
+      class extends HTMLElement {
+        constructor() {
+          super(); // mandatory: call super first
+          const myButtonTemplate = document.getElementById("myButton");
+          const shadowRoot = this.attachShadow({ mode: "closed" }); // creates shadow root
+          shadowRoot.appendChild(myButtonTemplate.content.cloneNode(true)); // 'initialize' and inject template
+        }
+      }
+    );
+  </script>
+</html>

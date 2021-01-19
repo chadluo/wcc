@@ -10,11 +10,11 @@
   <script>
     "use strict";
     customElements.define(
-      "custom-button", // mandatory '-'
+      "custom-button", // mandatory: '-' in name
       // extends specific element class
       class extends HTMLButtonElement {
         constructor() {
-          super(); // mandatory super call
+          super(); // mandatory: call super first
           this.append("yay"); // `this` refers to the element root
         }
       },
@@ -41,14 +41,14 @@ rendered dom:
   <script>
     "use strict";
     customElements.define(
-      "custom-element", // mandatory '-'
+      "custom-element", // mandatory: '-' in name
       // extends base class
       class extends HTMLElement {
         get owner() {
           return this.hasAttribute("data-owner") ? this.getAttribute("data-owner") : "nobody";
         }
         constructor() {
-          super(); // mandatory super call at top
+          super(); // mandatory: call super first
           this.append(`yay ${this.owner}`);
         }
       }
@@ -85,10 +85,10 @@ Seems they must work together.
   <script>
     "use strict";
     customElements.define(
-      "custom-element",
+      "custom-element", // mandatory: '-' in name
       class extends HTMLElement {
         constructor() {
-          super();
+          super(); // mandatory: call super first
           const myButtonTemplate = document.getElementById("myButton");
           const shadowRoot = this.attachShadow({ mode: "closed" }); // creates shadow root
           shadowRoot.appendChild(myButtonTemplate.content.cloneNode(true)); // 'initialize' and inject template

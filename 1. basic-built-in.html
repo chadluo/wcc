@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <!-- declaration: `is` on existing tags -->
+  <button is="custom-button"></button>
+  <script>
+    "use strict";
+    customElements.define(
+      "custom-button", // mandatory: '-' in name
+      // extends specific element class
+      class extends HTMLButtonElement {
+        constructor() {
+          super(); // mandatory: call super first
+          this.append("yay"); // `this` refers to the element root
+        }
+      },
+      // mandatory parameter for `customElements.define` method
+      { extends: "button" }
+    );
+  </script>
+</html>

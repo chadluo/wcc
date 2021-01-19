@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <!-- declaration: new custom tag -->
+  <custom-element data-owner="yukirock"></custom-element>
+  <script>
+    "use strict";
+    customElements.define(
+      "custom-element", // mandatory: '-' in name
+      // extends base class
+      class extends HTMLElement {
+        get owner() {
+          return this.hasAttribute("data-owner") ? this.getAttribute("data-owner") : "nobody";
+        }
+        constructor() {
+          super(); // mandatory: call super first
+          this.append(`yay ${this.owner}`);
+        }
+      }
+      // no extends object
+    );
+  </script>
+</html>
