@@ -29,3 +29,7 @@ Seems they must work together.
 rendered dom:
 
 ![](shadowroot-template.png)
+
+## Shadow dom and style
+
+4. shadow-dom-style.html

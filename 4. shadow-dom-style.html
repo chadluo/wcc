@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <!-- 'global' styles -->
+  <style>
+    button {
+      background: white;
+      color: black;
+    }
+  </style>
+
+  <template id="myButton">
+    <!-- component specific styles -->
+    <style>
+      button {
+        outline: none;
+        background: navy;
+        color: white;
+      }
+    </style>
+    <!-- not inheriting 'global' styles -->
+    <button>ok</button>
+  </template>
+
+  <custom-element></custom-element>
+
+  <button>not ok</button>
+
+  <script>
+    "use strict";
+    customElements.define(
+      "custom-element", // mandatory: '-' in name
+      class extends HTMLElement {
+        constructor() {
+          super(); // mandatory: call super first
+          const myButtonTemplate = document.getElementById("myButton");
+          const shadowRoot = this.attachShadow({ mode: "closed" }); // creates shadow root
+          shadowRoot.appendChild(myButtonTemplate.content.cloneNode(true)); // 'initialize' and inject template
+        }
+      }
+    );
+  </script>
+</html>
