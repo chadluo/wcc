@@ -8,6 +8,7 @@
   <!-- declaration: `is` on existing tags -->
   <button is="custom-button"></button>
   <script>
+    "use strict";
     customElements.define(
       "custom-button", // mandatory '-'
       // extends specific element class
@@ -36,8 +37,9 @@ rendered dom:
 <!DOCTYPE html>
 <html>
   <!-- declaration: new custom tag -->
-  <custom-element></custom-element>
+  <custom-element data-owner="yukirock"></custom-element>
   <script>
+    "use strict";
     customElements.define(
       "custom-element", // mandatory '-'
       // extends base class
@@ -81,6 +83,7 @@ Seems they must work together.
   <custom-element><span slot="label">uwu</span></custom-element>
 
   <script>
+    "use strict";
     customElements.define(
       "custom-element",
       class extends HTMLElement {
