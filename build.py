@@ -15,7 +15,7 @@ def main():
 
 def loadHTML(file):
     html = open(file, 'r')
-    return f"```html\n{html.read()}```\n"
+    return f"```html\n{html.read()}```\n[{file}]({file})\n"
 
 
 if __name__ == "__main__":

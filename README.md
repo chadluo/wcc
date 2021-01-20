@@ -24,6 +24,7 @@
   </script>
 </html>
 ```
+[1-basic-built-in.html](1-basic-built-in.html)
 
 rendered dom:
 
@@ -57,6 +58,7 @@ rendered dom:
   </script>
 </html>
 ```
+[2-attributes-autonomous.html](2-attributes-autonomous.html)
 
 rendered dom:
 
@@ -98,7 +100,56 @@ Seems they must work together.
   </script>
 </html>
 ```
+[3-shadow-dom-template.html](3-shadow-dom-template.html)
 
 rendered dom:
 
 ![](shadowroot-template.png)
+
+## Shadow dom and style
+
+```html
+<!DOCTYPE html>
+<html>
+  <!-- 'global' styles -->
+  <style>
+    button {
+      background: white;
+      color: black;
+    }
+  </style>
+
+  <template id="myButton">
+    <!-- component specific styles -->
+    <style>
+      button {
+        outline: none;
+        background: navy;
+        color: white;
+      }
+    </style>
+    <!-- not inheriting 'global' styles -->
+    <button>ok</button>
+  </template>
+
+  <custom-element></custom-element>
+
+  <button>not ok</button>
+
+  <script>
+    "use strict";
+    customElements.define(
+      "custom-element", // mandatory: '-' in name
+      class extends HTMLElement {
+        constructor() {
+          super(); // mandatory: call super first
+          const myButtonTemplate = document.getElementById("myButton");
+          const shadowRoot = this.attachShadow({ mode: "closed" }); // creates shadow root
+          shadowRoot.appendChild(myButtonTemplate.content.cloneNode(true)); // 'initialize' and inject template
+        }
+      }
+    );
+  </script>
+</html>
+```
+[4-shadow-dom-style.html](4-shadow-dom-style.html)

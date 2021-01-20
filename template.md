@@ -2,7 +2,7 @@
 
 ## Basic customized built-in elements
 
-1. basic-built-in.html
+1-basic-built-in.html
 
 rendered dom:
 
@@ -12,7 +12,7 @@ rendered dom:
 
 ## Attributes with autonomous custom elements
 
-2. attributes-autonomous.html
+2-attributes-autonomous.html
 
 rendered dom:
 
@@ -24,7 +24,7 @@ rendered dom:
 
 Seems they must work together.
 
-3. shadow-dom-template.html
+3-shadow-dom-template.html
 
 rendered dom:
 
@@ -32,4 +32,4 @@ rendered dom:
 
 ## Shadow dom and style
 
-4. shadow-dom-style.html
+4-shadow-dom-style.html
