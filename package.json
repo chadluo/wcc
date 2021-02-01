@@ -1,0 +1,19 @@
+{
+  "name": "wcc",
+  "version": "0.0.1",
+  "description": "web components cheatsheet",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadluo/web-components-cheatsheet.git"
+  },
+  "author": "chadluo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadluo/web-components-cheatsheet/issues"
+  },
+  "homepage": "https://github.com/chadluo/web-components-cheatsheet#readme"
+}
