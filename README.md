@@ -1,5 +1,12 @@
 # Web Components Cheatsheet
 
+- [Basic customized built-in elements](#basic-customized-built-in-elements)
+- [Attributes with autonomous custom elements](#attributes-with-autonomous-custom-elements)
+- [Basic shadow dom and template](#basic-shadow-dom-and-template)
+- [Shadow dom and style](#shadow-dom-and-style)
+
+<hr>
+
 [MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 
 ## Basic customized built-in elements
@@ -34,9 +41,9 @@ rendered dom:
 <button is="custom-button">yay</button>
 ```
 
+- [The HTML DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)
 - [ES5 Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [`CustomElementRegistry.define()`](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define)
-- [The HTML DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)
 
 ## Attributes with autonomous custom elements
 

@@ -1,5 +1,7 @@
 # Web Components Cheatsheet
 
+TOC
+
 [MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 
 ## Basic customized built-in elements
