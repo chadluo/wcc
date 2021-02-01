@@ -32,7 +32,7 @@
   </script>
 </html>
 ```
-[1-basic-built-in.html](1-basic-built-in.html)
+[examples/1-basic-built-in.html](examples/1-basic-built-in.html)
 
 rendered dom:
 
@@ -70,7 +70,7 @@ rendered dom:
   </script>
 </html>
 ```
-[2-attributes-autonomous.html](2-attributes-autonomous.html)
+[examples/2-attributes-autonomous.html](examples/2-attributes-autonomous.html)
 
 rendered dom:
 
@@ -112,11 +112,11 @@ Seems they must work together.
   </script>
 </html>
 ```
-[3-shadow-dom-template.html](3-shadow-dom-template.html)
+[examples/3-shadow-dom-template.html](examples/3-shadow-dom-template.html)
 
 rendered dom:
 
-![](shadowroot-template.png)
+![](examples/shadowroot-template.png)
 
 ## Shadow dom and style
 
@@ -164,7 +164,7 @@ rendered dom:
   </script>
 </html>
 ```
-[4-shadow-dom-style.html](4-shadow-dom-style.html)
+[examples/4-shadow-dom-style.html](examples/4-shadow-dom-style.html)
 
 ## References
 

@@ -15,7 +15,7 @@ const { Readable } = require("stream");
   for await (const line of template_reader) {
     if (line.endsWith(".html")) {
       readme_internal.push(`\`\`\`html\n${fs.readFileSync(line)}\`\`\`\n[${line}](${line})\n`);
-      robots.write(`Disallow: /${line}\n`);
+      robots.write(`Disallow: /${line.replace("examples/", "")}\n`);
     } else if (line.startsWith("##")) {
       toc.push([line.replace("## ", ""), line.replace("## ", "").replaceAll(" ", "-").toLowerCase()]);
       readme_internal.push(`${line}\n`);

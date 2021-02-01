@@ -4,7 +4,7 @@ TOC
 
 ## Basic customized built-in elements
 
-1-basic-built-in.html
+examples/1-basic-built-in.html
 
 rendered dom:
 
@@ -18,7 +18,7 @@ rendered dom:
 
 ## Attributes with autonomous custom elements
 
-2-attributes-autonomous.html
+examples/2-attributes-autonomous.html
 
 rendered dom:
 
@@ -30,15 +30,15 @@ rendered dom:
 
 Seems they must work together.
 
-3-shadow-dom-template.html
+examples/3-shadow-dom-template.html
 
 rendered dom:
 
-![](shadowroot-template.png)
+![](examples/shadowroot-template.png)
 
 ## Shadow dom and style
 
-4-shadow-dom-style.html
+examples/4-shadow-dom-style.html
 
 ## References
 
