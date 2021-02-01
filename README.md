@@ -4,10 +4,9 @@
 - [Attributes with autonomous custom elements](#attributes-with-autonomous-custom-elements)
 - [Basic shadow dom and template](#basic-shadow-dom-and-template)
 - [Shadow dom and style](#shadow-dom-and-style)
+- [References](#references)
 
 <hr>
-
-[MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 
 ## Basic customized built-in elements
 
@@ -166,3 +165,8 @@ rendered dom:
 </html>
 ```
 [4-shadow-dom-style.html](4-shadow-dom-style.html)
+
+## References
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+- [JS INFO](https://javascript.info/web-components)

@@ -2,8 +2,6 @@
 
 TOC
 
-[MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-
 ## Basic customized built-in elements
 
 1-basic-built-in.html
@@ -41,3 +39,8 @@ rendered dom:
 ## Shadow dom and style
 
 4-shadow-dom-style.html
+
+## References
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+- [JS INFO](https://javascript.info/web-components)
