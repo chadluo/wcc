@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /1-basic-built-in.html
+Disallow: /2-attributes-autonomous.html
+Disallow: /3-shadow-dom-template.html
+Disallow: /4-shadow-dom-style.html

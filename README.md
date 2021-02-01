@@ -34,6 +34,10 @@ rendered dom:
 <button is="custom-button">yay</button>
 ```
 
+- [ES5 Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [`CustomElementRegistry.define()`](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define)
+- [The HTML DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)
+
 ## Attributes with autonomous custom elements
 
 ```html
